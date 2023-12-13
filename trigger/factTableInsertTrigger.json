@@ -2,15 +2,21 @@
 	"name": "factTableInsertTrigger",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Started",
-		"pipelines": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "varun-13dec",
+					"type": "PipelineReference"
+				}
+			}
+		],
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
 				"frequency": "Minute",
 				"interval": 5,
 				"startTime": "2023-11-27T14:14:00",
-				"endTime": "2023-11-27T14:33:00",
 				"timeZone": "India Standard Time"
 			}
 		}
