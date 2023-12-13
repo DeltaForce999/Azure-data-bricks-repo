@@ -1,5 +1,11 @@
 {
 	"name": "azureExam-adf-instance",
+	"properties": {
+		"globalConfigurations": {
+			"factoryStagingLSReferenceName": "AzureDataLakeStorage1",
+			"factoryStagingLSType": "LinkedServiceReference"
+		}
+	},
 	"location": "eastus",
 	"identity": {
 		"type": "SystemAssigned",
