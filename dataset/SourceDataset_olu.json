@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "SampleData/SweetTreats",
+				"folderPath": "SampleData/JollyGood",
 				"fileSystem": "adf-storage-container"
 			},
 			"columnDelimiter": ",",
