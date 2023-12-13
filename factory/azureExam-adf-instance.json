@@ -1,0 +1,9 @@
+{
+	"name": "azureExam-adf-instance",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "967d3a17-7aa3-487f-9f8f-b71773f04dd9",
+		"tenantId": "09a20173-bb2c-436d-b450-9a7c53f51860"
+	}
+}

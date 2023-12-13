@@ -1,0 +1,25 @@
+{
+	"name": "factTableInsertTrigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "fact_trip_pipeline",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 5,
+				"startTime": "2023-11-27T14:14:00",
+				"endTime": "2023-11-27T14:33:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
