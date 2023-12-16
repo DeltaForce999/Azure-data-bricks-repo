@@ -50,7 +50,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DelimitedText1",
+						"referenceName": "adf_sales_02",
 						"type": "DatasetReference"
 					}
 				],

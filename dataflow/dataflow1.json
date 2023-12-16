@@ -1,0 +1,49 @@
+{
+	"name": "dataflow1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "adf_sales_dataset",
+						"type": "DatasetReference"
+					},
+					"name": "source1"
+				},
+				{
+					"dataset": {
+						"referenceName": "adf_sales_02",
+						"type": "DatasetReference"
+					},
+					"name": "source2"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"scriptLines": [
+				"source(output(",
+				"          SalesMonth as string,",
+				"          Retailer as string,",
+				"          Product as string,",
+				"          SalesValueUSD as string,",
+				"          UnitsSold as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> source1",
+				"source(output(",
+				"          Retailer as string,",
+				"          SkuCode as string,",
+				"          Product as string,",
+				"          SalesMonth as string,",
+				"          SalesValue as string,",
+				"          UnitsSold as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> source2"
+			]
+		}
+	}
+}

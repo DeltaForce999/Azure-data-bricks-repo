@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText1",
+	"name": "adf_sales_02",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",
@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "SampleData/CandyShack",
+				"folderPath": "SampleData/HandyCandy",
 				"fileSystem": "adf-storage-container"
 			},
 			"columnDelimiter": ",",
